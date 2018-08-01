@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://fcyp.goucui.vip/portal_html/fcyp_html/tuiguang_wx_geren.html -->
+<html lang="zh-CN" class="translated-ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>翡翠严品</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style type="text/css">
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .copy{
+            width: 100%;
+            height: auto;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            padding: 10px 15px;
+            background: #ffffff;
+            z-index: 333;
+        }
+        #wx_geren_account{position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
+    </style>
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/translateelement.css"></head>
+<body>
+<!--品牌-->
+<div>
+    <img src="images/tuiguang_01.png" alt="">
+    <img src="images/tuiguang_02.png" alt="">
+    <img src="images/tuiguang_03.png" alt="">
+    <img src="images/tuiguang_04.png" alt="">
+    <img src="images/tuiguang_05.png" alt="">
+    <img src="images/tuiguang_06.png" alt="">
+    <img src="images/tuiguang_07.png" alt="">
+</div>
+<div style="height: 60px;">
+</div>
+<div class="copy">
+    <img src="images/wx_geren.png" alt="" id="copy">
+    <input type="text" value="gc677677" id="wx_geren_account">
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script>
+    //复制公众号
+    $(".copy").click(function () {
+        var wxinput = document.getElementById('wx_geren_account');
+        wxinput.value = 'gc677677';
+        console.log(wxinput)
+        wxinput.select(); // 选中文本
+        document.execCommand("copy"); // 执行浏览器复制命令
+        alert("复制客服微信号【gc677677】成功，快去微信中添加吧--朱任锦？？？？？？？？");
+        location.href="weixin://";
+    })
+</script>
+
+</body>
+</html>

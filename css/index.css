@@ -1,0 +1,373 @@
+.header{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.back{
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    color: #ffffff;
+    z-index: 333;
+    background: rgba(0,0,0,0.5);
+    padding: 7px;
+    border-radius: 30px;
+    display: none;
+}
+.back i{
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background:url("../img/icon/back.png") 0px 0px no-repeat;
+    background-size: contain;
+    vertical-align: bottom;
+}
+.back span{
+    font-size: 1.4rem;
+}
+.share{
+    left: unset;
+    right: 12px;
+}
+.share i{
+    width: 17px;
+    height: 17px;
+    background:url("../img/icon/share.png") 0px 0px no-repeat;
+    background-size: contain;
+}
+.goodsTitle{
+    background: #f5f5f5;
+    height: 195px;
+    position: relative;
+}
+.playClass{
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+}
+.title{
+    width: 94%;
+    height: 150px;
+    background: #ffffff;
+    margin: 0px auto;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    right: 0;
+    z-index: 333;
+    border-radius: 3px;
+}
+.title .hot{
+    width: 38px;
+    height: 45px;
+    background: red;
+    color: #ffffff;
+    padding: 7px;
+    position: absolute;
+    top: 0px;
+    left: 14px;
+    font-size: 1.2rem;
+    display: none;
+}
+.title .price{
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+}
+.price .newPrice{
+    color: #ed3a33;
+    font-size: 1.7rem;
+}
+.price .oldPrice{
+    color: #dadada;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    text-decoration: line-through;
+}
+.titleCon {
+    padding: 0px 14px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.wx{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 8px;
+    left: 0px;
+    z-index: 333;
+    clear: both;
+}
+.wx .wxLeft{
+    float: left;
+    display: inline-block;
+}
+.wx .wxLeft img{
+    width: 27px;
+    height: 27px;
+    vertical-align: middle;
+    margin: 0px 15px;
+}
+.wx .wxLeft span{
+    font-size: 1.5rem;
+}
+.wx .wxRight{
+    float: right;
+    display: inline-block;
+    color: #b5b5b5;
+    margin-right: 20px;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    background:url("../img/icon/arrowRightC.png") right center no-repeat;
+    background-size: 6px 10px;
+}
+.goodsDetail{
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+.detailTab{
+    overflow: hidden;
+    display: flex;
+    padding: 0px 14px;
+    border-bottom: 1px solid #dbdbdb;
+    position: relative;
+}
+.detailTab.detailTabFiexd{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #ffffff;
+    z-index: 999;
+}
+.detailTab li{
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    float: left;
+    flex: 1;
+    font-size: 1.6rem;
+}
+.detailTab li:nth-child(3){
+    display: none;
+}
+.detailTab .active{
+    color: #29b44d;
+    border-bottom: 1px solid #29b44d;
+}
+.goodsCon,.evaluate,.brand,.serviceCon,.hotGoods{
+    position: relative;
+}
+.brand img{
+    display: none;
+}
+.parameter{
+    padding: 15px;
+}
+.parameter div{
+    height: 27px;
+    line-height: 27px;
+    padding: 0px 10px;
+    color: #787878;
+    font-size: 1.3rem;
+}
+.parameter div:nth-child(odd){
+    background: #f5f5f5;
+}
+.parameter div span:first-child{
+    float: left;
+}
+.parameter div span:last-child{
+    float: right;
+}
+.goodsImg{
+    border-top: 1px solid #e3e3e3;
+    padding: 15px;
+}
+.goodsImg img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+.evaluate{
+    background: #f5f5f5;
+    padding-top: 5px;
+}
+.evaluateCon{
+    padding: 14px;
+    background: #ffffff;
+    margin-bottom: 5px;
+}
+.evaluateConTop{
+    overflow: hidden;
+}
+.evaluateConTop img{
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.evaluateConTop i{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url("../img/icon/star.png") 0px 0px no-repeat;
+    background-size: contain;
+}
+.evaluateConTop i.star{
+    background: url("../img/icon/starChecked.png") 0px 0px no-repeat;
+    background-size: contain;
+}
+.evaluateConTop div:first-child{
+    float: left;
+    font-size: 1.3rem;
+}
+.evaluateConTop div:last-child{
+    float: right;
+}
+.evaluateConText{
+    margin-top: 10px;
+}
+.evaluateConText p{
+    color: #727272;
+    font-size: 1.3rem;
+}
+.evaluateConText .evaluateImg{
+     margin-top: 10px;
+ }
+.evaluateConText .evaluateImg img{
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.evaluateConTime{
+    text-align: right;
+    color: #a5a5a5;
+    padding-right: 10px;
+    font-size: 1.2rem;
+}
+.otherEvaluate{
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.serviceCon .zhiquanImg,.serviceCon .quankouImg{
+    display: none;
+}
+.hotGoods{
+    padding: 10px;
+    clear: both;
+}
+.hotGoods .goods{
+    width: 49%;
+    height: auto;
+    float: left;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.hotGoods .goods:nth-child(odd){
+     float: left;
+ }
+.hotGoods .goods:nth-child(even){
+    float: right;
+}
+.goodsPic{
+    position: relative;
+}
+.goodsPic img{
+    width: 100%;
+    height: 225px;
+}
+.goodsPic i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 33;
+    margin-top: -25px;
+    margin-left: -25px;
+    background: url("../img/icon/play.png") 0px 0px no-repeat;
+    background-size: contain;
+}
+.goods p{
+    padding: 15px 12px;
+    font-size: 1.4rem;
+    color: #4d4d4d;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 54px;
+}
+.goods .goodsPrice{
+     padding: 0px 12px 5px;
+ }
+.goods .goodsPrice strong{
+    font-size: 1.6rem;
+    color: #c72323;
+    font-weight: normal;
+}
+.goods .goodsPrice span{
+      font-size: 1.2rem;
+      color: #c4c4cc;
+      text-decoration: line-through;
+    padding-left: 5px;
+    display: none;
+  }
+.goods .goodsPrice i{
+    display: inline-block;
+    float: right;
+    width: 18px;
+    height: 15px;
+    margin-top: 5px;
+    background: url("../img/icon/love.png") 0px 0px no-repeat;
+    background-size: contain;
+}
+.goods .goodsPrice i.loveChecked{
+    background: url("../img/icon/loveChecked.png") 0px 0px no-repeat;
+    background-size: contain;
+}
+.download{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    padding: 10px 15px;
+    background: #ffffff;
+    z-index: 333;
+}
+.download img{
+    width: 142px;
+    height: 45px;
+    float: left;
+}
+.download a{
+    display: inline-block;
+    width: 161px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #ffffff;
+    background: #2ab452;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    float: right;
+    margin-top: 4px;
+}

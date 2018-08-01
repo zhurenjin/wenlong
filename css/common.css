@@ -1,0 +1,117 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+html,body{
+	font-size: 62.5%;
+    color: #131315;
+    background: #ffffff;
+}
+ul,li{
+    list-style: none;
+}
+strong{
+	font-weight: normal;
+}
+a:link{
+    cursor: pointer;
+    text-decoration: none;
+}
+iframe{
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.service{
+    height: 45px;
+    padding-top: 15px;
+    width: 100%;
+}
+.service span{
+    color: #28ae59;
+    display: inline-block;
+    width: 21%;
+    height: 13px;
+    line-height: 13px;
+    padding-left: 15px;
+    background: url("../img/icon/scuess.png") 0px 0px no-repeat;
+    background-size: contain;
+    margin-left: 6px;
+    font-size: 1.3rem;
+}
+.service i{
+    width: 6px;
+    height: 10px;
+    padding-left: 18px;
+    display: inline-block;
+    background: url("../img/icon/arrowRight.png") 0px 0px no-repeat;
+    background-size: contain;
+}
+
+.zhezhao{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    display: none;
+}
+.zhezhao .zCon{
+    width: auto;
+    height: 90%;
+    margin: 10% 5%;
+    overflow: auto;
+    border-radius: 5px;
+    background: #ffffff;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.zhezhao .zCon img{
+    width: 100%;
+    height: auto;
+}
+.zhezhao .zCon .con{
+   background: #ffffff;
+    padding: 2% 0;
+    position: relative;
+    -webkit-overflow-scrolling : touch;
+}
+.zhezhao .zCon .con:after{
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url("../img/icon/icon1.png") 0px 0px no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 8px;
+    left: -27px;
+}
+.zhezhao .zCon .con h3{
+   margin-bottom: 5px;
+    color: #333333;
+    font-size: 16px;
+}
+.zhezhao .zCon .con p{
+    color: #7d7d7d;
+    font-size: 12px;
+}
+.brand{
+    margin-top: 5px;
+}
+.brand img,.serviceCon img{
+    width: 100%;
+    height: auto;
+}
+.serviceCon .zhiquanImg,.serviceCon .quankouImg{
+    display: none;
+}
+
+.add{
+    height:100%;
+    overflow:hidden;
+}
