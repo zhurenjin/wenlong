@@ -1,443 +1,208 @@
 <!DOCTYPE html>
-<!-- saved from url=(0067)http://fcyp.goucui.vip/portal_html/fcyp_html/tuiguang_wx_geren.html -->
-<html lang="zh-CN" class="translated-ltr">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
     <title>翡翠严品</title>
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <style type="text/css">
-        img{
-            width: 100%;
-            height: auto;
+    <meta content="翡翠行情，翡翠批发，翡翠购买，翡翠价格" name="keywords">
+    <link rel="stylesheet" href="css/translateelement.css">
+    <!--<link rel="stylesheet" href="css/common.css">-->
+    <!--<link rel="stylesheet" href="css/dz.css">-->
+    <script src="js/jquery.min.js"></script>
+    <style>
+        .section_top{
+            position: relative;
         }
-        .copy{
+        .section_top img{
             width: 100%;
-            height: auto;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            overflow: hidden;
-            padding: 10px 15px;
-            background: #ffffff;
-            z-index: 333;
+            display: block;
         }
-        #wx_geren_account{position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
+        .section_top a{
+            font-size: 16px;
+            position: absolute;
+            bottom: 30px;
+            display: block;
+            width: 88%;
+            text-align: center;
+            padding: 8px 14px;
+            color: #fff;
+            background-color: #24C43A;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius:20px;
+            left: 50%;
+            right: 50%;
+            margin-left: -44%;
+        }
 
-        /*2018-8-1*/
-        div.topPicbox{
-            padding: 15px;
+        .section_img{
+            width: 100%;
+            margin: 0 auto 20px;
         }
-        div.topPicbox .topPicboxL,div.topPicbox .topPicboxR{
+        .section_img .sectionBox{
+            margin: 0 auto;
+            width: 90%;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 14px;
+            -webkit-border-radius:14px;
+            -moz-border-radius:14px;
+        }
+        .section_img .sectionBox img{
+            width: 100%;
+        }
+        .sectionBox_pic,.sectionBox_des{
             width: 50%;
         }
-        div.topPicbox .topPicboxL{
-            padding-right: 8px;
-            height: 210px;
-        }
-        div.topPicbox .topPicboxL p{
-            color: #0E8306 ;
-            line-height: 20px;
-            height: 110px;
-        }
-        div.topPicbox .topPicboxL span{
-            display: inline-block;
-            background:url("images/1.png") no-repeat center center;
-            -webkit-background-size: contain;
-            height: 10px;
-            width: 92%;
-            background-size: contain;
-        }
-        div.topPicbox .topPicboxL a{
-            display: inline-block;
-            width: 100%;
-            color: #fff;
-            background-color: #0E8306;
-            font-size: 12px;
-            line-height: 20px;
-            height: 20px;
-            margin: 4px 0;
+        .sectionBox_des{
             text-align: center;
+            padding-left: 2px;
         }
-        div.topPicbox .topPicboxR {
-            background:url("images/pic.png") no-repeat center center;
-            -webkit-background-size: cover;
-            height: 210px;
-            background-size: cover;
+        .sectionBox_des h3{
+            margin: 16px 0 4px;
+            font-size: 1.2rem;
+            line-height: 50px;
         }
-
-        /*背景图片*/
-        .topPicboxBG{
-            background:url("images/zu3.png") no-repeat center center;
-            -webkit-background-size: cover;
-            height: 130px;
-            width: 100%;
-            border-radius: 10px;
-            -ms-border-radius:10px;
-            -moz-border-radius:10px;
-            -o-border-radius:10px;
-            background-size: cover;
+        .sectionBox_des h4{
+            color: #7D7D7D;
+            line-height: 28px;
+            font-size: 1rem;
         }
-        .topPicboxBG h4,.topPicboxBG p{
-            text-align: center;
-            color: #ffffff;
-        }
-        .topPicboxBG h4{
-            font-size: 20px;
-            padding: 22px 0 16px;
-        }
-        .topPicboxBG p{
-            width: 80%;
-            margin: 0 auto;
-            color: #f3f3f3;;
-        }
-
-        /*标题背景*/
-        .topPicboxBGTit{
-            margin-top: 30px;
-            background: url(images/kuang.png) no-repeat center center;
-            -webkit-background-size: contain;
-            height: 60px;
-            width: 100%;
-            background-size: contain;
-        }
-        .topPicboxBGTit{
-            text-align: center;
-            font-size: 20px;
-            line-height: 44px;
-            color: #000;
-            font-weight: 700;
-        }
-        /*描述*/
-        .topPicboxBGDes p{
-            padding-top: 4px;
-            color: #333;
-            font-size: 16px;
-            line-height: 24px;
-        }
-        .CompanyProise{
-            width: 100%;
-            text-align: center;
-        }
-        .CompanyProise h4{
-            font-size: 20px;
-            color: #000;
-            display: inline-block;
-            text-align: center;
-        }
-        .CompanyProise span{
-            display: inline-block;
-            width: 30px;
-            height: 2px;
-            text-align: center;
-            background-color: #000;
-            margin-bottom: 6px;
-        }
-        /*留言*/
-        .leaveMessage h5{
-            color: #c3c3c3;
-            text-align: left;
-            padding: 15px;
-        }
-        .leaveMessage span{
-            height: 1px;
-            background-color: #cccccc;
-            display:block;
-            width: 100%
-        }
-        .leaveMessageBox{
-            margin: 20px 0;
-        }
-        .leaveMessageBoxL{
-            background:url("images/zu13.png") no-repeat center center;
-            -webkit-background-size: cover;
-            height: 50px;
-            width: 50px;
-            background-size: cover;
-        }
-        .leaveMessageBoxR{
-            width: 80%;
-        }
-        .leaveMessageBoxR p{
-            line-height: 24px;
-        }
-        .leaveMessage .leaveMessageBoxR span{
-            border: none;
-            color: #44679B;
-            width:100px;
-            background: none;
-            text-align: left;
-        }
-        .Meaagesname a,.Meaagesname span{
-            display: inline-block;
-        }
-        .Meaagesname a{
-            text-align: right;
-        }
-        .leaveMessage .leaveMessageBoxR a span{
-            width: 30px;
-        }
-        .Meaagesname a img{
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-        }
-
-
     </style>
 </head>
-<body>
-<!--品牌-->
-<div style="margin-bottom: 60px">
-    <div class="topPic">
-        <div>
-            <img src="images/personalWX.png" alt="">
-        </div>
-        <div class="topPicbox clearfix">
-            <div class="fl topPicboxL">
-                <p>“我做了十多年翡翠，写下这篇最全的购翠攻略，致喜爱翡翠的你，愿你不走弯路不打眼！”请花3分钟往下看，买翡翠到底该看什么？</p>
-                <span></span>
-                <a>一看质量。看什么？怎么看？</a>
-                <a>二选款式。选什么？怎么选？</a>
-                <a>三比价格。比什么？怎么比？</a>
-            </div>
-            <div class="fr topPicboxR">
-            </div>
-        </div>
-        <div class="topPicbox">
-            <div class="topPicboxBG">
-                <h4>怎么看质量？翡翠严品的专业性！</h4>
-                <p>在接触不到翡翠实物的情况下，如何判断翡翠的质量？请添加微信号：gc677677</p>
-            </div>
-            <div class="topPicboxBGTit">
-               看翡翠背后的企业背景
-            </div>
-            <div class="topPicboxBGDes">
-                <p>翡翠作为一种高雅的审美寄托，样式非常丰富，
-                    大到室内摆件装饰，小到戒面手镯，每一类饰件的种水、
-                    颜色、款式都自有乾坤，加之每位翠友的爱好又不尽相同，
-                    于是，我们集拢了一批优质的翡翠货源，打造出这个放心
-                    、多样的翡翠平台！</p>
-            </div>
-        </div>
-        <div class="topPicbox">
-            <div>
-                <img src="images/2.png" alt="">
-            </div>
-            <div class="topPicboxBGTit">
-                看翡翠企业的资质证书
-            </div>
-            <div class="topPicboxBGDes">
-                <p>
-                    看过企业背景后，相关的资质证书一定要有，做企业容易，做有良心有资质的企业难，
-                    所以一定要看清楚企业是否有相关的资质证明。
-                </p>
-            </div>
-        </div>
-
-        <div class="topPicbox">
-            <div>
-                <img src="images/zu88.png" alt="">
-            </div>
-            <div class="topPicboxBGTit">
-                看翡翠材料来源和渠道
-            </div>
-            <div class="topPicboxBGDes">
-                <p>
-                    翡翠原材料渠道非常重要，这涉及到了最终成品的价格，
-                    <strong>“天下翡翠出缅甸，翡翠加工出广东“</strong>，有实力的厂家都是直接批发翡翠原石回来加工成成品。
-                </p>
-            </div>
-            <div>
-                <img src="images/zu99.png" alt="">
-            </div>
-        </div>
-        <span style="height: 10px;background-color: #cccccc;display:block;width: 100%"></span>
-        <div class="topPicbox">
-            <div class="topPicboxBG" style="background:url(images/zu4.png) no-repeat center center;">
-                <h4>怎么选款式？翡翠严品的多样性！</h4>
-                <p>查看更多款式，请添加微信号：gc677677</p>
-            </div>
-            <div class="topPicboxBGDes" style="margin-top: 10px">
-                <p>翡翠作为一种高雅的审美寄托，样式非常丰富，
-                    大到室内摆件装饰，小到戒面手镯，每一类饰件的种水、
-                    颜色、款式都自有乾坤，加之每位翠友的爱好又不尽相同，
-                    于是，我们集拢了一批优质的翡翠货源，打造出这个放心
-                    、多样的翡翠平台！</p>
-            </div>
-            <div>
-                <img src="images/06.png" alt="">
-            </div>
-            <div>
-                <img src="images/07.png" alt="">
-            </div>
-        </div>
-        <span style="height: 10px;background-color: #cccccc;display:block;width: 100%"></span>
-        <div class="topPicbox">
-            <div class="topPicboxBG" style="background:url(images/zu5.png) no-repeat center center;height: 160px;">
-                <h4>怎么比价格？翡翠严品的实惠性！</h4>
-                <p>
-                    翡翠有三种比价渠道，一种是实体门店，一种是电商网店，还有一种是厂家直销
-                    ，下面详细说下这几个渠道的价格模式。查看更多优惠，请添加微信号：gc677677
-                </p>
-            </div>
-            <div class="topPicboxBGTit">
-                实体门店渠道
-            </div>
-            <div class="topPicboxBGDes">
-                <p>
-                    实体门店，位于翡翠销售渠道的最下游，拿到的翡翠成品已经是经过多重渠道的抽成，
-                    再加上人工和昂贵的铺租，最终都要分摊到翡翠价格上，
-                    所以门店的销售价格是最贵的，一般是批发价的两倍以上。
-                </p>
-            </div>
-            <div style="margin-top: 10px">
-                <img src="images/zu6.png" alt="">
-            </div>
-            <div class="topPicboxBGTit">
-                电商网店渠道
-            </div>
-            <div class="topPicboxBGDes">
-                <p>
-                    电商网店渠道，一般是通过工厂或者是分销商拿货，
-                    中间环节较少，而且没有昂贵的铺租，一价格一般是批发价的140%~160%。
-                    在正品保证上，因为网店的规范性不强，很难对真假作出保证，也是假货聚集地最严重的地方。
-                </p>
-            </div>
-            <div style="margin-top: 10px">
-                <img src="images/zu7.png" alt="">
-            </div>
-            <div class="topPicboxBGTit">
-                厂家直销渠道
-            </div>
-            <div class="topPicboxBGDes">
-                <p>
-                    厂家直销渠道，没有中间环节，没有渠道抽成，没有其他人工与铺租的叠加成本，
-                    直接以批发价售卖，是市场价的50%以下，
-                    在价格上有绝对的优势。厂家一般都是直接从原石市场拿料加工，
-                    占有第一手货源，从源头上把控正品，保证货源充足，拥有最多翡翠精品。
-                </p>
-            </div>
-            <div style="margin-top: 20px">
-                <img src="images/zu8.png" alt="">
-            </div>
-            <div style="margin-top: 20px">
-                <img src="images/zu2.png" alt="">
-            </div>
-        </div>
-        <span style="height: 10px;background-color: #cccccc;display:block;width: 100%"></span>
-        <div class="topPicbox">
-            <div class="CompanyProise">
-                <span></span>
-                <h4>翡翠严品承诺做到四个百分百</h4>
-                <span></span>
-            </div>
-            <div class="CompanyProiseBox clearfix">
-                <img src="images/zuhe.png" alt="">
-             </div>
-            </div>
-        <span style="height: 10px;background-color: #cccccc;display:block;width: 100%"></span>
-        <div class="leaveMessage">
-            <h5>精选留言</h5>
-            <span></span>
-            <div class="topPicbox">
-                <div class="leaveMessageBox clearfix">
-                    <div class="leaveMessageBoxL fl">
-                    </div>
-                    <div class="leaveMessageBoxR fr">
-                          <div class="Meaagesname clearfix">
-                              <span class="fl">白玉无瑕</span>
-                              <a class="fr">
-                                  <img src="images/zhang.png" alt="">
-                                  <span>1585</span>
-                              </a>
-                          </div>
-                          <p>翡翠行业水太深了，一直怕买到假的翡翠，现在好了，在你们家买翡翠不怕买到假货了！
-                              哈哈，终于买到喜欢的翡翠手镯了，价格比实体店确实便宜不少。
-                          </p>
-                    </div>
-                </div>
-                <div class="leaveMessageBox clearfix">
-                    <div class="leaveMessageBoxL fl" style="background:url(images/zu14.png) no-repeat center center;">
-                    </div>
-                    <div class="leaveMessageBoxR fr">
-                        <div class="Meaagesname clearfix">
-                            <span class="fl">ALAN</span>
-                            <a class="fr">
-                                <img src="images/zhang.png" alt="">
-                                <span>637</span>
-                            </a>
-                        </div>
-                        <p>收到货时很怕是假货，后来不放心去做了鉴定确实是真的，以后可以放心在你们家买了。
-                        </p>
-                    </div>
-                </div>
-                <div class="leaveMessageBox clearfix">
-                    <div class="leaveMessageBoxL fl" style="background:url(images/zu15.png) no-repeat center center;">
-                    </div>
-                    <div class="leaveMessageBoxR fr">
-                        <div class="Meaagesname clearfix">
-                            <span class="fl">青山暮雪</span>
-                            <a class="fr">
-                                <img src="images/zhang.png" alt="">
-                                <span>427</span>
-                            </a>
-                        </div>
-                        <p>款式好多，都很漂亮价格也实惠，买了一个手镯送给老妈，非常喜欢！
-                        </p>
-                    </div>
-                </div>
-                <div class="leaveMessageBox clearfix">
-                    <div class="leaveMessageBoxL fl" style="background:url(images/zu16.png) no-repeat center center;">
-                    </div>
-                    <div class="leaveMessageBoxR fr">
-                        <div class="Meaagesname clearfix">
-                            <span class="fl">静若繁花</span>
-                            <a class="fr">
-                                <img src="images/zhang.png" alt="">
-                                <span>337</span>
-                            </a>
-                        </div>
-                        <p>吊坠收到了，还有一张鉴定证，果然很专业！
-                        </p>
-                    </div>
-                </div>
-                <div class="leaveMessageBox clearfix">
-                    <div class="leaveMessageBoxL fl" style="background:url(images/zu17.png) no-repeat center center;">
-                    </div>
-                    <div class="leaveMessageBoxR fr">
-                        <div class="Meaagesname clearfix">
-                            <span class="fl">剑舞红颜笑</span>
-                            <a class="fr">
-                                <img src="images/zhang.png" alt="">
-                                <span>228</span>
-                            </a>
-                        </div>
-                        <p>买的时候很担心翡翠和买回来的颜色不一样，收到货后很满意，还是在大平台买翡翠有保证，不错，很放心。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </div>
+<body style="background-color: #000;">
+<section class="main" style="padding-bottom: 3rem;">
+    <div class="fixed down-fixed" style="display: none;">
+        <a>下载对庄APP直达翡翠源头市场</a>
     </div>
-<div class="copy">
-    <img src="images/wx_geren.png" alt="" id="copy">
-    <input type="text" value="gc677677" id="wx_geren_account">
-</div>
+    <div class="down-icon-fixed">
+        <a>
+            <img src="images/download.png" width="60px">
+        </a>
+    </div>
+    <div class="section_top">
+        <img src="images/05.png" alt="">
+        <a>
+            下载翡翠严品APP，海量捡漏精品任您挑
+        </a>
+    </div>
+    <div class="section_img">
+        <div class="sectionBox clearfix">
+            <div class="fl sectionBox_pic">
+                <img src="images/01.png" alt="">
+            </div>
+            <div class="fr sectionBox_des">
+                <h3>翡翠源头直供</h3>
+                <h4>
+                    缅甸公盘采购原石
+                </h4>
+                <h4>
+                    翡翠工厂直接供应
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="section_img">
+        <div class="sectionBox clearfix">
+            <div class="fl sectionBox_des">
+                <h3>大师开料雕刻</h3>
+                <h4 style="text-align: left">
+                    由从业十年以上雕刻大师直接雕刻,件件精品，件件孤品
+                </h4>
+            </div>
+            <div class="fr sectionBox_pic">
+                <img src="images/02.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section_img">
+        <div class="sectionBox clearfix">
+            <div class="fl sectionBox_pic">
+                <img src="images/03.png" alt="">
+            </div>
+            <div class="fr sectionBox_des">
+                <h3>海量精品款式</h3>
+                <h4>
+                    每日上新2000款翡翠<br>
+                    20万款在售翡翠货源
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="section_img">
+        <div class="sectionBox clearfix">
+            <div class="fl sectionBox_des">
+                <h3>担保鉴定交易</h3>
+                <h4 style="text-align: left">
+                    第三方担保交易，国检鉴定确保正品，不满意免费退货
+                </h4>
+            </div>
+            <div class="fr sectionBox_pic">
+                <img src="images/04.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section_img">
+        <div class="sectionBox clearfix">
+            <div class="fl sectionBox_pic">
+                <img src="images/03.png" alt="">
+            </div>
+            <div class="fr sectionBox_des">
+                <h3>一物一证</h3>
+                <h4>
+                    每款翡翠配专属证书,支持全国复检，假一赔百
+                </h4>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
 
+    $(function () {
+        $('.down-fixed').hide();
+        $(window).scroll(function(){
+            //每次滚动重新获取滚动高度
+            var lastTop=$(this).scrollTop();
+            if(lastTop>300){
+                //加载对应的内容区域
+                $('.down-fixed').show();
+            }else{
+                $('.down-fixed').hide();
+            }
 
-<script src="js/jquery.min.js"></script>
-<script>
-    //复制公众号
-    $(".copy").click(function () {
-        var wxinput = document.getElementById('wx_geren_account');
-        wxinput.value = 'gc677677';
-        wxinput.select(); // 选中文本
-        alert("复制客服微信号【gc677677】成功，快去微信中添加吧--");
-    })
+        });
+        $('.down-fixed a').click(function(){
+            download_app();
+        })
+        $('.down-icon-fixed a').click(function(){
+            download_app();
+        })
+        $('.section_top a').click(function(){
+            download_app();
+        })
+    });
+    // //android下载url
+    // androidUrl = 'https://at.umeng.com/XLHjWj?cid=5484';
+    // //ios下载url
+    // iosUrl = 'https://at.umeng.com/T1nieq?cid=5484';
+    function download_app(){
+        window.location.href = 'https://at.umeng.com/onelink/P1fe4n';
+        // var u = navigator.userAgent, app = navigator.appVersion;
+        // var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+        // var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        // if (isAndroid) {
+        //     //这个是安卓操作系统
+        //     window.location.href = iosUrl;
+        // }else if (isIOS) {
+        //     //这个是ios操作系统
+        //     window.location.href = androidUrl;
+        // }
+    }
 
 </script>
-
 </body>
 </html>
