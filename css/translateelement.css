@@ -430,7 +430,7 @@ textarea, input[type=text] {
 
 .main .down-icon-fixed {
     position:fixed;
-    top: 160px;
+    bottom: 215px;
     right: 10px;
     z-index: 10;
 }
